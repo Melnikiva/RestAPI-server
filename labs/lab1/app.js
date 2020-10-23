@@ -315,7 +315,6 @@ function getOptionFromMenu(menu) {
 
 function getNewUser() {
     let user = new User;
-    user.id = this.storage.nextId;
     user.registeredAt = new Date().toISOString();
     user.isEnabled = true;
     user.login = readline.question("Input login: ");
@@ -336,7 +335,6 @@ function getNewUser() {
 
 function getNewCompositon() {
     let composition = new Composition;
-    composition.id = this.storage.nextId;
     composition.title = readline.question("Input title: ");
     composition.genre = readline.question("Input genre: ");
     while (1) {

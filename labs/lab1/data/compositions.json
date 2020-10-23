@@ -1,17 +1,17 @@
 {
-    "nextId": 4,
+    "nextId": 5,
     "items": [
         {
-            "id": 1,
-            "title": "Hello",
-            "genre": "rap",
-            "rating": 80
-        },
-        {
             "id": 2,
-            "title": "Oh, hello again",
+            "title": "New title",
             "genre": "pop",
             "rating": 65
+        },
+        {
+            "id": 4,
+            "title": "Hydrogen",
+            "genre": "electro",
+            "rating": 97
         }
     ]
 }

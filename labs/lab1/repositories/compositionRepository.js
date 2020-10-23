@@ -7,6 +7,7 @@ class CompositionRepository {
     }
 
     addComposition(compositionModel) {
+        compositionModel.id = this.storage.nextId;
         let compositions = this.storage.readItems();
         compositions.push(compositionModel);
         this.storage.writeItems(compositions);

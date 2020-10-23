@@ -7,6 +7,7 @@ class UserRepository {
     }
 
     addUser(userModel) {
+        userModel.id = this.storage.nextId;
         let users = this.storage.readItems();
         users.push(userModel);
         this.storage.writeItems(users);
