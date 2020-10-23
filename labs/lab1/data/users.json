@@ -1,0 +1,23 @@
+{
+    "nextId": 3,
+    "items": [
+        {
+            "id": 1,
+            "login": "qwerty",
+            "fullname": "ewqd dwqd",
+            "role": 0,
+            "registeredAt": "2020-10-23T13:55:10.411Z",
+            "avaUrl": "weqdfefb",
+            "isEnabled": true
+        },
+        {
+            "id": 2,
+            "login": "newUser",
+            "fullname": "new user",
+            "role": 0,
+            "registeredAt": "2020-10-23T13:57:01.516Z",
+            "avaUrl": "some url",
+            "isEnabled": true
+        }
+    ]
+}

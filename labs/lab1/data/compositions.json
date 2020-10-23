@@ -1,0 +1,17 @@
+{
+    "nextId": 4,
+    "items": [
+        {
+            "id": 1,
+            "title": "Hello",
+            "genre": "rap",
+            "rating": 80
+        },
+        {
+            "id": 2,
+            "title": "Oh, hello again",
+            "genre": "pop",
+            "rating": 65
+        }
+    ]
+}
