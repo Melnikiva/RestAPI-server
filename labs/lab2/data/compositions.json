@@ -1,0 +1,17 @@
+{
+    "nextId": 5,
+    "items": [
+        {
+            "id": 2,
+            "title": "ANOTHER one title",
+            "genre": "funk",
+            "rating": 65
+        },
+        {
+            "id": 4,
+            "title": "Hydrogen",
+            "genre": "electro",
+            "rating": 97
+        }
+    ]
+}

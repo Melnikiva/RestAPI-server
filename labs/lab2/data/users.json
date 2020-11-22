@@ -1,0 +1,50 @@
+{
+    "nextId": 6,
+    "items": [
+        {
+            "id": 1,
+            "login": "admin",
+            "fullname": "admin",
+            "role": 1,
+            "registeredAt": "2020-10-23T13:55:10.411Z",
+            "avaUrl": "",
+            "isEnabled": true
+        },
+        {
+            "id": 2,
+            "login": "newUser",
+            "fullname": "new user",
+            "role": 0,
+            "registeredAt": "2020-10-23T13:57:01.516Z",
+            "avaUrl": "",
+            "isEnabled": true
+        },
+        {
+            "login": "wqdqwdqwfer",
+            "fullname": "Petya",
+            "role": 0,
+            "avaUrl": "url",
+            "isEnabled": true,
+            "id": 4,
+            "registeredAt": "2020-11-22T17:18:50.062Z"
+        },
+        {
+            "login": "WWWWWWWWWWWWWWWWWW",
+            "fullname": "Ivan",
+            "role": 0,
+            "avaUrl": "url",
+            "isEnabled": true,
+            "id": 5,
+            "registeredAt": "2020-11-22T17:18:50.062Z"
+        },
+        {
+            "login": "Ussssser",
+            "fullname": "user",
+            "role": 0,
+            "avaUrl": "url",
+            "isEnabled": true,
+            "id": 3,
+            "registeredAt": "2020-11-22T17:18:50.062Z"
+        }
+    ]
+}
