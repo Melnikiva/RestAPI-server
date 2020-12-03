@@ -1,4 +1,5 @@
 const JsonStorage = require('../jsonStorage');
+const Composition = require('../models/composition');
 
 class CompositionRepository {
 
@@ -9,9 +10,15 @@ class CompositionRepository {
     addComposition(compositionModel) {
         compositionModel.id = this.storage.nextId;
         let compositions = this.storage.readItems();
-        compositions.push(compositionModel);
+        const newComposition = new Composition(
+            compositionModel.id,
+            compositionModel.title,
+            compositionModel.genre,
+            compositionModel.rating);
+        compositions.push(newComposition);
         this.storage.writeItems(compositions);
         this.storage.incrementNextId();
+        return newComposition;
     }
 
     getCompositions() {
@@ -31,8 +38,9 @@ class CompositionRepository {
     updateComposition(compositionModel) {
         let compositions = this.storage.readItems();
         let id = -1;
+        const compositionId = parseInt(compositionModel.id);
         for (let i = 0; i <= compositions.length; i++) {
-            if (compositions[i].id === compositionModel.id) {
+            if (compositions[i].id === compositionId) {
                 id = i;
                 compositionModel.title != null ? compositions[i].title = compositionModel.title : {};
                 compositionModel.genre != null ? compositions[i].genre = compositionModel.genre : {};

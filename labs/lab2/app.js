@@ -1,41 +1,32 @@
 const createError = require('http-errors');
 const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
 
 const apiRouter = require('./routes/api')
 
 const app = express();
-
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/', apiRouter);
 
 // swagger
 const expressSwaggerGenerator = require('express-swagger-generator');
 const expressSwagger = expressSwaggerGenerator(app);
- 
+
 const options = {
-    swaggerDefinition: {
-        info: {
-            description: 'Detailed documentation',
-            title: 'Lab2 api documentation',
-            version: '1.0.0',
-        },
-        host: 'localhost:3001',
-        produces: [ "application/json" ],
+  swaggerDefinition: {
+    info: {
+      description: 'Detailed documentation',
+      title: 'Lab2 api documentation',
+      version: '1.0.0',
     },
-    basedir: __dirname,
-    files: ['./routes/**/*.js', './models/**/*.js'],
+    host: 'localhost:3000',
+    produces: ["application/json"],
+  },
+  basedir: __dirname,
+  files: ['./routes/**/*.js', './models/**/*.js'],
 };
 expressSwagger(options);
- 
-app.listen(3001);
+
+app.listen(3000);
 
 
 

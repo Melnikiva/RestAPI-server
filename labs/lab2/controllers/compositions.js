@@ -1,28 +1,32 @@
 const CompositionRepository = require('../repositories/compositionRepository');
+const compositionRepository = new CompositionRepository('./data/compositions.json')
 
-const compositionRepository = new CompositionRepository('/home/melnik/webprogbase/labs/lab2/data/compositions.json')
 module.exports = {
     getCompositions(req, res) {
         res.send(compositionRepository.getCompositions());
     },
 
     getCompositionById(req, res) {
-        const composition = compositionRepository.getCompositionById(parseInt(req.params.id));
-        if (composition !== null)
-            res.send(composition)
-        else
-            res.sendStatus(404);
+        try {
+            const composition = compositionRepository.getCompositionById(parseInt(req.params.id));
+            if (composition !== null) {
+                res.send(composition)
+            }
+            else
+                res.sendStatus(404);
+        }
+        catch (err) {
+            console.error(err.message);
+        }
     },
 
     postComposition(req, res) {
-        try {
+        if (req.body.title != null && req.body.title != "") {
             const newComposition = compositionRepository.addComposition(req.body);
-            res.send(newComposition);
-            res.sendStatus(201);
+            res.status(201).send(newComposition);
         }
-        catch (err) {
-            console.log(err.message);
-            res.sendStatus(404);
+        else {
+            res.sendStatus(400);
         }
     },
 
@@ -40,7 +44,18 @@ module.exports = {
     putComposition(req, res) {
         try {
             const composition = req.body;
-            res.send(compositionRepository.updateComposition(composition));
+            console.log(composition);
+            if (composition.id != null) {
+                if (req.body.title != null && req.body.title === "") {
+                    res.sendStatus(400);
+                }
+                else {
+                    res.send(compositionRepository.updateComposition(composition));
+                }
+            }
+            else {
+                res.sendStatus(400);
+            }
         }
         catch (err) {
             console.log(err.message);

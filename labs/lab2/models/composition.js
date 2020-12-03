@@ -1,14 +1,14 @@
 /**
- * @typedef User
+ * @typedef Composition
  * @property {integer} id
- * @property {string}  title.required - composition title
- * @property {string}  genre - music genre
- * @property {integer} rating - composition rating
+ * @property {string}  title.required   - composition title
+ * @property {string}  genre            - music genre
+ * @property {integer} rating           - composition rating
  */
 
 class Composition {
 
-    constructor(id, title, genre, rating) {
+    constructor(id, title, genre = "", rating = 0) {
         this.id = id;           // number
         this.title = title;     // string
         this.genre = genre;     // string
