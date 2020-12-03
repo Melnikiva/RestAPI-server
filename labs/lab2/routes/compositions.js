@@ -18,7 +18,7 @@ router.get('/', compositionController.getCompositions);
  * @route GET /api/compositions/{id}
  * @group Compositions - composition operations
  * @param {integer} id.path.required - Composition id
- * @returns {Composition.model} 201 - Composition object
+ * @returns {Composition.model} 200 - Composition object
  * @returns {Error} 404 - Composition not found
  */
 router.get('/:id(\\d+)', compositionController.getCompositionById);
@@ -37,7 +37,7 @@ router.post('/', parser, compositionController.postComposition);
  * @route DELETE /api/compositions/{id}
  * @group Compositions - composition operations
  * @param {integer} id.path.required - Composition id
- * @returns {Composition.model} 201 - deleted Composition object
+ * @returns {Composition.model} 200 - deleted Composition object
  * @returns {Errror} 404 - Composition not found
  */
 router.delete('/:id(\\d+)', compositionController.deleteCompositionById)
@@ -47,7 +47,7 @@ router.delete('/:id(\\d+)', compositionController.deleteCompositionById)
  * @route PUT /api/compositions
  * @group Compositions - composition operations
  * @param {Composition.model} id.body.required - updated Composition object
- * @returns {Composition.model} 201 - Composition updated
+ * @returns {Composition.model} 200 - Composition updated
  */
 router.put('/', parser, compositionController.putComposition);
 

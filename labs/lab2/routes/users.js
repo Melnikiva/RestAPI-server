@@ -18,7 +18,7 @@ router.get('/', userController.getUsers)
  * @route GET /api/users/{id}
  * @group Users - user operations
  * @param {integer} id.path.required - id of the User
- * @returns {User.model} 201 - User object
+ * @returns {User.model} 200 - User object
  * @returns {Error} 404 - User not found
  */
 router.get('/:id(\\d+)', userController.getUserById);
@@ -37,7 +37,7 @@ router.post('/', parser, userController.postUser);
  * @route DELETE /api/users/{id}
  * @group Users - user operations
  * @param {integer} id.path.required - id of the User
- * @returns {User.model} 201 - deleted User object
+ * @returns {User.model} 200 - deleted User object
  * @returns {Errror} 404 - User not found
  */
 router.delete('/:id(\\d+)', userController.deleteUserById)
@@ -47,7 +47,7 @@ router.delete('/:id(\\d+)', userController.deleteUserById)
  * @route PUT /api/users
  * @group Users - user operations
  * @param {User.model} id.body.required - updated User object
- * @returns {User.model} 201 - User updated
+ * @returns {User.model} 200 - User updated
  */
 router.put('/', parser, userController.putUser);
 
