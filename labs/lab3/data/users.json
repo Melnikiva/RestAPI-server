@@ -1,0 +1,45 @@
+{
+    "nextId": 5,
+    "items": [
+        {
+            "id": 1,
+            "login": "admin",
+            "fullname": "admin",
+            "role": 1,
+            "registeredAt": "2020-10-23T13:55:10.411Z",
+            "avaUrl": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-go/1/15/2.jpg?width=325",
+            "isEnabled": true,
+            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis eleifend leo. Praesent consectetur interdum eros sed molestie. Donec consequat, elit sit amet molestie condimentum, leo diam ullamcorper elit, eu fringilla orci purus a libero. Aenean semper eros sed arcu faucibus, quis lacinia enim maximus. Suspendisse vel ex non elit rhoncus imperdiet vitae a nulla. Ut accumsan arcu eget arcu suscipit, nec bibendum nisl convallis. Fusce faucibus eros quis enim feugiat consequat. Quisque dictum, urna sit amet finibus vestibulum, ligula leo interdum turpis, eu pellentesque leo magna vel odio. Vestibulum non tincidunt dolor. Sed vitae gravida mi, a egestas lacus. Suspendisse cursus eget erat eget sagittis. Proin luctus lectus sit amet enim malesuada blandit. Aenean nisl velit, ultricies id vestibulum vel, ultrices ut turpis. Nam ac purus consequat, lobortis tellus at, lacinia dui. Nullam congue ex vel risus imperdiet, ac sollicitudin magna iaculis. "
+        },
+        {
+            "id": 2,
+            "login": "newUser",
+            "fullname": "new user",
+            "role": 0,
+            "registeredAt": "2020-10-23T13:57:01.516Z",
+            "avaUrl": "",
+            "isEnabled": true,
+            "bio": "Sed placerat tempus diam, quis maximus nisl. Quisque eu lacinia sapien, a gravida urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec elementum sapien in magna tincidunt, at pretium magna rhoncus. Nullam tempus libero eget lacus aliquam auctor. Duis elit mauris, faucibus a odio nec, fermentum cursus odio. Integer eget eros et nisi facilisis tempor. Donec odio leo, euismod sit amet tortor ac, commodo sollicitudin turpis. Proin cursus porttitor erat a molestie. Integer eu metus vitae neque sagittis tempor. Aliquam vitae luctus orci. "
+        },
+        {
+            "id": 3,
+            "login": "purpur",
+            "fullname": "Lena Sh",
+            "role": "0",
+            "registeredAt": "2020-11-29T18:57:28.633Z",
+            "avaUrl": "https://www.kingstonvetclinic.com/wp-content/uploads/sites/50/2020/01/1912_Breeds_Corgi_GettyImages-1061822700.png",
+            "isEnabled": true,
+            "bio": "Proin dui elit, volutpat ac vulputate nec, gravida vestibulum libero. Pellentesque malesuada massa eget ipsum mollis hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus faucibus leo at massa mollis, in mattis nulla sollicitudin. Nunc semper vitae arcu ut faucibus. Donec hendrerit metus tempor est semper, sed hendrerit mauris finibus. Pellentesque vitae feugiat metus. Pellentesque ac sapien quis elit ornare ornare nec sed mauris. Praesent luctus vulputate nisl, non congue sapien gravida nec. Etiam ornare tristique nibh, sit amet ultricies nisl accumsan ut. Aenean tempus ante magna, quis dictum ante ornare eu. Duis quis feugiat erat. Vivamus vehicula porta velit, at tristique tortor iaculis vitae. Quisque id pellentesque enim, sit amet aliquam sem. Fusce condimentum tincidunt ex, nec scelerisque lectus rhoncus ac. "
+        },
+        {
+            "id": 4,
+            "login": "pepega",
+            "fullname": "Oleg P",
+            "role": "0",
+            "registeredAt": "2020-11-29T19:08:55.892Z",
+            "avaUrl": "https://miro.medium.com/max/1024/1*6B0hnPejERl2D768U4vb1w.jpeg",
+            "isEnabled": true,
+            "bio": "Nunc venenatis et justo condimentum lacinia. Sed placerat consectetur metus quis fringilla. Fusce congue odio vitae magna consequat tempor. Fusce viverra maximus finibus. Phasellus accumsan metus vel dolor fermentum, non imperdiet tellus convallis. Cras dui dolor, vestibulum vitae lacus vitae, tempus accumsan metus. Vestibulum ac posuere risus. Cras rhoncus maximus viverra. Mauris consectetur ipsum congue, suscipit eros id, porttitor felis. Aenean pharetra dolor quis nibh pretium, malesuada varius est tempor. Pellentesque mattis odio quis metus elementum dignissim. Nulla sagittis lorem id porttitor ornare. Etiam in tempus odio. Quisque sit amet euismod turpis. Fusce volutpat iaculis hendrerit. Duis suscipit iaculis lacus ac pharetra. "
+        }
+    ]
+}

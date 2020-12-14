@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" href="images/user.png" type="image/icon type">
+</head>
+
+<body>
+    <div id="window">
+        <div id="head">
+            <div id="header">
+                <img class="logo" , src="images/user.png" . alt="User image">
+                <h1>Users table</h1>
+            </div>
+        </div>
+        <hr>
+        <div id="body">
+            <div id="menu">
+                <b>Menu</b>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li class="disabled">Users</li>
+                    <li><a href="/compositions">Compositions</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <table>
+                    <tr id="titles">
+                        <th><b>Login</b></th>
+                        <th><b>Fullname</b></th>
+                        <th><b>Registered</b></th>
+                    </tr>
+                    {{#users}}
+                        <tr>
+                            <th>{{{login}}}</th>
+                            <th>{{fullname}}</th>
+                            <th>{{registeredAt}}</th>
+                        </tr>
+                    {{/users}}
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

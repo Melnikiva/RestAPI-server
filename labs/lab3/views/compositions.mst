@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compositions</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" href="images/composition.png" type="image/icon type">
+</head>
+
+<body>
+    <div id="window">
+        <div id="head">
+            <div id="header">
+                <img class="logo" , src="images/composition.png" . alt="Composition image">
+                <h1>Compositions table</h1>
+            </div>
+        </div>
+        <hr>
+        <div id="body">
+            <div id="menu">
+                <b>Menu</b>
+                <ul>
+                    <li><a  href="/">Home</a></li>
+                    <li><a  href="/users">Users</a></li>
+                    <li class="disabled">Compositions</li>
+                    <li><a  href="/about">About</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <p>Веб сервер для керування списками користувачів та композицій</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

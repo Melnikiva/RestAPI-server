@@ -1,5 +1,5 @@
 {
-    "nextId": 5,
+    "nextId": 6,
     "items": [
         {
             "id": 2,
@@ -12,6 +12,12 @@
             "title": "Hydrogen",
             "genre": "electro",
             "rating": 97
+        },
+        {
+            "id": 5,
+            "title": "title",
+            "genre": "genre",
+            "rating": 50
         }
     ]
 }

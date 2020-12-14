@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" href="images/about.png" type="image/icon type">
+</head>
+
+<body>
+    <div id="window">
+        <div id="head">
+            <div id="header">
+                <img class="logo", src="images/about.png" . alt="About image">
+                <h1>About product and developer</h1>
+            </div>
+        </div>
+        <hr>
+        <div id="body">
+            <div id="menu">
+                <b>Menu</b>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/users">Users</a></li>
+                    <li><a href="/compositions">Compositions</a></li>
+                    <li class="disabled">About</li>
+                </ul>
+            </div>
+            <div class="content">
+                <p>Веб сервер для керування списками користувачів та композицій</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
