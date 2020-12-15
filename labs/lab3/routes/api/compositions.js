@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const bodyParser = require('body-parser');
-const parser = bodyParser.urlencoded({ extended: true });
+
 
 const compositionController = require('../../controllers/api/compositions');
 
@@ -30,7 +29,7 @@ router.get('/:id(\\d+)', compositionController.getCompositionById);
 * @param {Composition.model} title.body.required - new Composition object
 * @returns {Composition.model} 201 - added Composition object
 */
-router.post('/', parser, compositionController.postComposition);
+router.post('/', compositionController.postComposition);
 
 /**
  * Delete composition by id
@@ -49,6 +48,6 @@ router.delete('/:id(\\d+)', compositionController.deleteCompositionById)
  * @param {Composition.model} id.body.required - updated Composition object
  * @returns {Composition.model} 200 - Composition updated
  */
-router.put('/', parser, compositionController.putComposition);
+router.put('/', compositionController.putComposition);
 
 module.exports = router;

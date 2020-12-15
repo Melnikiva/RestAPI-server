@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Composition info</title>
+    <title>Add new composition</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="icon" href="/images/composition.png" type="image/icon type">
 </head>
@@ -13,8 +13,8 @@
     <div id="window">
         <div id="head">
             <div id="header">
-                <img class="logo" src="/images/composition.png" alt="Composition logo">
-                <h1>Composition information</h1>
+                <img class="logo" , src="/images/composition.png" . alt="Composition logo">
+                <h1>Add new composition</h1>
             </div>
         </div>
         <hr>
@@ -28,20 +28,18 @@
                     <li><a href="/about">About</a></li>
                 </ul>
             </div>
-            <div class="content">
-                <div id="info">
-                    <img id="avatar" src="/data/media/{{imageId}}" alt="Composition image">
-                    <div id="data">
-                        <h2>{{title}}</h2>
-                        <p>Genre: {{genre}}</p>
-                        <p>Rating: {{rating}}</p>
-                    </div>
-                </div>
-                <div align="right">
-                <form action="/compositions/{{id}}" method="POST">
-                        <input type="submit" value="Delete">
-                    </form>
-                </div>
+            <div class="content" id="addform">
+                <form action="/compositions/new" method="POST" enctype="multipart/form-data">
+                    Title: <br>
+                    <input required type="text" name="title"><br>
+                    Genre: <br>
+                    <input type="text" name="genre"><br>
+                    Rating: <br>
+                    <input type="number" min="0" max="100" name="rating"><br>
+                    Album cover: <br>
+                    <input type="file" name="image"><br>
+                    <input type="submit" value="Submit">                    
+                </form>
             </div>
         </div>
     </div>

@@ -29,9 +29,9 @@
                 </ul>
             </div>
             <div class="content">
-                <div id="user_info">
-                    <img id="avatar" src="{{avaUrl}}" alt="Avatar link">
-                    <div id="info">
+                <div id="info">
+                    <img id="avatar" src="{{avaUrl}}" alt="Avatar image">
+                    <div id="data">
                         <h2>{{fullname}}</h2>
                         <p>Login: {{login}}</p>
                         <p>Registered: {{registeredAt}}</p>

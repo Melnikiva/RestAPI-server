@@ -14,7 +14,8 @@ class CompositionRepository {
             compositionModel.id,
             compositionModel.title,
             compositionModel.genre,
-            compositionModel.rating);
+            compositionModel.rating,
+            compositionModel.imageId);
         compositions.push(newComposition);
         this.storage.writeItems(compositions);
         this.storage.incrementNextId();
@@ -45,6 +46,7 @@ class CompositionRepository {
                 compositionModel.title != null ? compositions[i].title = compositionModel.title : {};
                 compositionModel.genre != null ? compositions[i].genre = compositionModel.genre : {};
                 compositionModel.rating != null ? compositions[i].rating = compositionModel.rating : {};
+                compositionModel.imageId != null ? compositions[i].imageId = compositionModel.imageId : {};
                 this.storage.writeItems(compositions);
                 break;
             }

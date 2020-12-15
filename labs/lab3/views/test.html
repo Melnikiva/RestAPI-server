@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User profile</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="icon" href="/images/user.png" type="image/icon type">
+    <title>Compositions</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" href="images/composition.png" type="image/icon type">
 </head>
 
 <body>
     <div id="window">
         <div id="head">
             <div id="header">
-                <img class="logo" src="/images/user.png" alt="User image">
-                <h1>User information</h1>
+                <img class="logo" , src="images/composition.png" . alt="Composition logo">
+                <h1>Compositions table</h1>
             </div>
         </div>
         <hr>
@@ -24,19 +24,37 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/users">Users</a></li>
-                    <li><a href="/compositions">Compositions</a></li>
+                    <li class="disabled">Compositions</li>
                     <li><a href="/about">About</a></li>
                 </ul>
             </div>
             <div class="content">
-                <div id="user_info">
-                    <img id="avatar" src="{{avaUrl}}" alt="Avatar link">
-                    <div id="info">
-                        <h2>{{fullname}}</h2>
-                        <p>Login: {{login}}</p>
-                        <p>Registered: {{registeredAt}}</p>
-                    </div>
+                <div id="search_div">
+                    <form action="/compositions" method="GET" id="search">
+                        Search:
+                        <input type="search" name="title" value={{search}}>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
+                {{#empty}}
+                {{#search_res}}
+                <h3 class="centered">Results for "{{search}}"</h3>
+                {{/search_res}}
+                <table id="compositions">
+                    <tr id="titles">
+                        <th><b>Title</b></th>
+                    </tr>
+                    {{#compositions}}
+                    <tr>
+                        <th>{{{title}}}</th>
+                    </tr>
+                    {{/compositions}}
+                </table>
+                {{/empty}}
+                {{^empty}}
+                <h3 class="centered">Compositions not found!</h3>
+                {{/empty}}
+                <button id="addbtn" formaction="/compositions/new" formmethod="GET">Add new</button>
             </div>
         </div>
     </div>

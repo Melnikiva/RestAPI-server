@@ -1,5 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
+const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const mustache = require('mustache-express');
 const path = require('path');
@@ -8,6 +9,9 @@ const apiRouter = require('./routes/api/api.js')
 const serviceRouter = require('./routes/server/service');
 
 const app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api/', apiRouter);
 app.use('/', serviceRouter);

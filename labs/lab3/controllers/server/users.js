@@ -7,7 +7,7 @@ module.exports = {
     },
 
     renderUserPage(req, res) {
-        const user = userRepository.getUserById(parseInt(req.params.id));
+        let user = userRepository.getUserById(parseInt(req.params.id));
         user.registeredAt = getNormalDate(user.registeredAt);
         if (user.avaUrl == "") {
             user.avaUrl = "/images/not_found.png";
