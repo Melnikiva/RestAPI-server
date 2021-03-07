@@ -47,7 +47,7 @@ module.exports = {
     },
     deleteComposition(req, res) {
         const deleted = compositionRepository.deleteComposition(parseInt(req.params.id));
-        deleted != null ? res.redirect(`/compositions`) : res.sendStatus(404);
+        res.redirect(`/compositions`);
     }
 }
 

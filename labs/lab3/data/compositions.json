@@ -1,33 +1,33 @@
 {
-    "nextId": 14,
+    "nextId": 17,
     "items": [
         {
             "id": 4,
             "title": "Hydrogen",
             "genre": "electro",
             "rating": "97",
-            "imageId": "5"
-        },
-        {
-            "id": 5,
-            "title": "Parapapa",
-            "genre": "some genre",
-            "rating": "54",
-            "imageId": "6"
+            "imageId": 5
         },
         {
             "id": 6,
             "title": "Take on me",
             "genre": "pop",
             "rating": "99",
-            "imageId": "0"
+            "imageId": 0
         },
         {
             "id": 7,
             "title": "Crystals",
             "genre": "MOON",
             "rating": "94",
-            "imageId": "7"
+            "imageId": 7
+        },
+        {
+            "id": 16,
+            "title": "Test",
+            "genre": "test",
+            "rating": "50",
+            "imageId": 11
         }
     ]
 }
